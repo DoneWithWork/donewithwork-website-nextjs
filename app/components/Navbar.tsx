@@ -7,14 +7,18 @@ import React from "react";
 import Link from "next/link";
 
 export default function Navbar() {
+  const logo = "<DoneWithWork>";
   return (
-    <div className="w-full">
+    <div className="w-full animate-fade2">
       <nav className="max-w-7xl mx-auto py-5 flex flex-row items-center px-5 justify-between">
         <Link href={"/"}>
-          <h1 className="text-2xl font-semibold">DoneWithWork</h1>
+          <h1 className="text-2xl font-semibold">{logo}</h1>
         </Link>
         <div className="sm:flex flex-row items-center gap-8 hidden">
-          <Link href={"/projects"} className="underline font-semibold text-blue-500">
+          <Link
+            href={"/projects"}
+            className="underline font-semibold text-blue-500"
+          >
             Projects
           </Link>
           <Link href={"mailto:donewithworkyt@gmail.com"}>
